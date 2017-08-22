@@ -4,7 +4,7 @@
 import os
 import time
 
-#deal csv file
+#deal file
 def FileDeal(FileNeedToDo):
 	f = open('/rawdata/xdr/gn/gn_dns/' + TimeMenu + '/' + FileName + '/' + FileNeedToDo,'rb')
 	s = open('/rawdata/xdr/gn/gn_dns_bak/' + TimeMenu + '/' + FileName + '/' + FileNeedToDo,'w')
