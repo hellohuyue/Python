@@ -27,24 +27,30 @@ else:
 
 
 
-if (FileMin == 00):
+if (FileMin == '00'):
+        FileMin = 30
+        FileHour = int(FileHour) - 1
+elif (FileMin == '05')::
+        FileMin = 35
+        FileHour = int(FileHour) - 1
+elif (FileMin == '10'):
         FileMin = 40
         FileHour = int(FileHour) - 1
-elif (FileMin == 05):
+elif (FileMin == '15'):
         FileMin = 45
         FileHour = int(FileHour) - 1
-elif (FileMin == 10):
+elif (FileMin == '20'):
         FileMin = 50
         FileHour = int(FileHour) - 1
-elif (FileMin == 15):
+elif (FileMin == '25'):
         FileMin = 55
-        FileHour = int(FileHour) - 1	
+        FileHour = int(FileHour) - 1		
 else:
-        FileMin = int(FileMin) - 10
+        FileMin = int(FileMin) - 30
 
 		
 if len(str(FileMin)) is 1:
-        FileMin = '0' + str(SysTime[4])
+        FileMin = '0' + str(FileMin)
 else:
         pass
 
@@ -66,3 +72,4 @@ if TimeMenu not in FileList:
 	print 'ERRO:' + TimeMenu + 'not Exist!'
 else:
 	pass
+
