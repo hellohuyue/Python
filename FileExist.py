@@ -66,10 +66,7 @@ while(counter < FileLen):
 		FileList[counter]= str(FileList[counter]).split('_')[4][0:12]
 		counter = counter + 1
 
-TimeMenu = list(TimeMenu)
-TimeMenu = ''.join(TimeMenu)
 if TimeMenu not in FileList:
-	print 'ERRO:' + TimeMenu + 'not Exist!'
+        print 'ERRO:' + TimeMenu + 'not Exist!'
 else:
-	pass
-
+        pass
