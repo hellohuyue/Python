@@ -64,7 +64,7 @@ LastFilename = str(LastFilename)[2:-4]
 print LastFilename
 
 if LastFilenum < msgtxtnum:
-    msg = '部省接口实时数据平滑告警,共' + msgtxtnum + '个文件,小时平滑文件:' + LastFilename
+    msg = '***' + msgtxtnum + '****' + LastFilename
 elif msgtxtnum == '0':
     pass
 else:
@@ -85,6 +85,6 @@ FileWrite2.close
 
 #send msg
 ShellThing = '/home/ipms/mybin/monitordisk/senddisksms.pl'
-phone = '18721274720,18301804086,18818228528,13918528245,13816700194'
+phone = '*****'
 cmd = '/%s %s %s'%(ShellThing,msg,phone)
 os.system(cmd)
