@@ -13,11 +13,10 @@ else:
 
 
 port = sys.argv[1]
-file = open('/home/ipms/mybin/socket/ip_addr.txt','r')
+file = open('ipfile','r')
 host_list = file.readlines()
 for line in host_list:
     ip = line.split(",")[0]
-    port = 6667
     s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     s.settimeout(2)
     try:
