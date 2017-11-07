@@ -12,7 +12,7 @@ else:
         print sys.argv
 
 
-port = sys.argv[1]
+port = int(sys.argv[1])
 file = open('ipfile','r')
 host_list = file.readlines()
 for line in host_list:
