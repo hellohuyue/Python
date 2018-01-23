@@ -9,4 +9,5 @@ Python practice
 6.excelchange.py：用openpyxl模块处理多sheet页的excel；<br/>
 7.OrigType.py：统计每小时.orig后缀的文件数量及文件名，并短信发送；<br/>
 8.socketTest.py：批量socket测试端口是否通;<br/>
-9.Findpeople.py:用import urllib、BeautifulSoup模块爬网站，找到想要的数据；用time、socket模块控制请求间隔时间和卡主退出。
+9.Findpeople.py:用urllib、BeautifulSoup模块爬网站，找到想要的数据；用time、socket模块控制请求间隔时间和卡主退出；<br/>
+10.SeePath.py:用os.popen模块，输入进程PID，可批量输出对应的目录及Diname。
